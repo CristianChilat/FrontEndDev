@@ -1,0 +1,57 @@
+*{
+    text-align: center;
+}
+
+header{
+    background-color: blue;
+    grid-area: header;
+    color: white;
+    border: 1px solid black;
+}
+
+nav{
+    background-color: violet;
+    grid-area: nav;
+    border: 1px solid black;
+}
+
+aside{
+    background-color: yellow;
+    border: 1px solid black;
+}
+
+section{
+    background-color: green;
+    grid-area: section;
+    color: white;
+    border: 1px solid black;
+}
+
+footer{
+    background-color: black;
+    color: #ffffff;
+    grid-area: footer;
+    border: 1px solid black;
+}
+
+#aside-l{
+    grid-area: aleft;
+}
+
+#aside-r{
+    grid-area: aright;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-areas: 
+    "header header header"
+    "nav nav nav"
+    "aleft section aright"
+    "footer footer footer"
+    ;
+    grid-template-columns: 150px auto 150px;
+    grid-template-rows: 100px 80px 300px 80px;
+}
