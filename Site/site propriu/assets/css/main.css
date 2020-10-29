@@ -1,0 +1,95 @@
+body{
+    padding: 0px;
+    margin: 0px;
+    display: grid;
+    grid-template-areas:
+    "header header header header"
+    ". nav nav ."
+    ". section aside ."
+    "footer footer footer footer"
+    ;
+    grid-template-columns: 1fr 15fr 3fr 1fr;
+    grid-template-rows: 200px 50px auto 100px;
+}   
+
+header{
+    display: grid;
+    padding: 0px;
+    margin: 0px;
+    grid-template-areas: 
+    "logo title"
+    ;
+    background-color: lightskyblue;
+    grid-area: header;
+}
+ 
+nav ul{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    list-style: none;
+    gap: 5px;
+    margin: 0px;
+    padding: 0px;
+
+}
+
+nav ul li a{
+    display: block;
+    text-decoration: none;
+    background-color: darkviolet;
+    color: white;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    border-radius: 15px;
+}
+
+nav ul li a:hover{
+    background-color: darkblue;
+    transform: scale(0.9);
+}
+
+header .title{
+    
+    line-height: 100px;
+}
+
+nav{
+    grid-area: nav;
+    background-color: lightgrey;
+}
+
+section{
+    grid-area: section;
+    background-color: #eeeeee;
+    min-height: 500px;
+}
+
+aside{
+    grid-area: aside;
+    background-color: yellow;
+    padding-top: 250px;
+}
+
+.logo-aside{
+    width: 100%;
+}   
+
+aside .logo-aside{
+ 
+}
+
+footer{
+    grid-area: footer;
+    background-color: black;
+}
+
+.title{
+    grid-area: title;
+}
+
+.logo{
+    height: 180px;
+    width: 200px;
+    grid-area: logo;
+}
