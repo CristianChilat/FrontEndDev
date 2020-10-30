@@ -1,0 +1,43 @@
+@media screen and (max-width: 960px) {
+    .logo {
+        height: 150px;
+        width: 150px;
+    }
+    body#body-contacts-page {
+        grid-template-rows: 150px 50px auto 100px;
+        grid-template-areas: 
+        "header header header header" 
+        "nav nav nav nav" 
+        "section section section aside" 
+        "footer footer footer footer";
+    }
+}
+
+@media screen and (max-width: 570px) {
+    .logo {
+        height: 100px;
+        width: 100px;
+    }
+    
+    body#body-contacts-page {
+        grid-template-rows: 150px auto auto auto 100px;
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        "header" 
+        "nav" 
+        "section" 
+        "aside"
+        "footer"
+        ;
+    }
+
+    nav ul{
+        grid-template-columns: 1fr;
+    }
+    
+    aside{
+        padding-top: 0;
+    }
+
+    
+}
