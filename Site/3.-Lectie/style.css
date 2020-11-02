@@ -1,0 +1,23 @@
+ol li{
+    border: 1px solid red;
+}
+
+ol li:first-child{
+    background: red;
+}
+
+ol li:last-child{
+    background: blue;
+}
+
+ol li:nth-child(4){
+    background: brown;
+}
+
+ol li:nth-child(even){
+    background-color: green;
+}
+
+ol li:nth-child(odd){
+    background-color: yellow;
+}
