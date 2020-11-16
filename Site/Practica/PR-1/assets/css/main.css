@@ -1,0 +1,50 @@
+
+
+body{
+    display: grid;
+    grid-template-columns: ;
+    margin: 0 auto;
+    width: 952px;
+}
+
+header{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    border: 1px solid red;
+    height: 100px;
+    padding-top: 23px;
+    padding-left: ;
+}
+
+header nav ul{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr); 
+    list-style: none;
+    
+}
+
+section{
+    border: 1px solid red;
+    height: 500px;
+}
+
+section#main{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 5em);
+    padding-top: 5em;
+}
+
+section#main div{
+    display: grid;
+    grid-template-rows: 200px 200px 30px ;
+}
+
+footer{
+    border: 1px solid red;
+    height: 100px ;
+}
+
+ul li{
+    
+}
