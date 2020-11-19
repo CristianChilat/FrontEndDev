@@ -2,21 +2,14 @@
 
 body{
     display: grid;
-    grid-template-columns: ;
+    /* grid-template-columns: ; */
     margin: 0 auto;
     width: 952px;
     position: relative;
     font-family: Arial, Helvetica, sans-serif;
 }
 
-/* #flower-background{
-    border: 1px solid black;
-    height: 100px;
-    width: 200px;
-    border-top-right-radius: 50px;
-    border-bottom-left-radius: 50px;
 
-} */
 
 #page-background{
     height: 800px;
@@ -106,6 +99,16 @@ section#main div p{
 section#main img{
     margin-left: -80px;
     margin-top: -50px;
+    z-index: 0;
+}
+
+section#main #main-flower{
+    position: absolute;
+    height: 382px;
+    width: 382px;
+    top: 400px;
+    right: 180px;
+    z-index: -1;
 }
 
 section#main div h1{
@@ -123,6 +126,10 @@ section#main div button{
     border: none;
     color: #ffffff;
     font-weight: bold;
+}
+
+section#main div button:focus{
+    outline: none;
 }
 
 section#about .section-title{
