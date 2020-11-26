@@ -9,7 +9,7 @@ $(document).ready(() => {
 
     for(let i = 1; i <= 10; i++){
         $(`#element${i}`).css({
-            left: `${i * 10}px`
+            left: `${i * 10}`
         })   
     }
 
@@ -36,7 +36,7 @@ $(document).ready(() => {
 
     for (let index = 0; index < 10; index++) {
         $(`#ball`).animate({
-            left: `+=20`
+            left: `+=10`
         }, 500);
     
         $(`#ball`).animate({
@@ -46,7 +46,10 @@ $(document).ready(() => {
             $("#ball").css({
                 backgroundColor: ballColors[index]
             });
-    
+            
+            $(`#element${index+3}`).css({
+                backgroundColor: ballColors[index]
+            });
         });
 
         

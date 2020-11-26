@@ -1,0 +1,8 @@
+#mario{
+    position: absolute
+    ;
+    background-image: url(../img/mario.png);
+    width: 100px;
+    height: 127px;
+    background-position: -470px -295px;
+}
