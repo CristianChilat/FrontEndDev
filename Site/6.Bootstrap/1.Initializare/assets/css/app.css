@@ -1,0 +1,18 @@
+header{
+    background-image: url(../img/Header-Background.jpg);
+    height: 200px;
+}
+
+nav{
+    position: sticky !important;
+    top: 0;
+}
+
+footer{
+    background-color: currentColor;
+}
+
+.list-group-item{
+    background-color: transparent;
+    color: whitesmoke;
+}
