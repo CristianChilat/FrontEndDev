@@ -1,11 +1,27 @@
+body{
+    background: rgb(141,124,164);
+background: linear-gradient(0deg, rgba(141,124,164,0.784284575646665) 0%, rgba(41,15,79,0.9551529229856005) 100%);
+}
+
 header{
-    background-image: url(../img/Header-Background.jpg);
+    background-image: url(../img/header-cosmos-background.jpg);
+    background-position: ;
     height: 200px;
 }
 
 nav{
     position: sticky !important;
     top: 0;
+}
+
+section{
+    background-color: whitesmoke;
+    padding-left: 1em;
+    padding-right: 1em;
+}
+
+section .shadow{
+    box-shadow: transparent ;
 }
 
 footer{
@@ -15,4 +31,9 @@ footer{
 .list-group-item{
     background-color: transparent;
     color: whitesmoke;
+}
+
+#nav-img{
+    margin-left: 1em;
+    margin-right: 1em;
 }
